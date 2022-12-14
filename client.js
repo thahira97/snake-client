@@ -13,6 +13,10 @@ const connect = function () {
   conn.on("connect", () => {
     conn.write("Name: MTS");
   });
+  // conn.on("connect", ()=> {
+  //   conn.write("Move: up");
+  // })
+
   conn.on("data", () => {
     console.log("you ded cuz you idled");
   });

@@ -11,6 +11,9 @@ const setupInput = function (conn) {
 };
 
 const handleUserInput = function (key) {
+  // To say message
+  connection.write("Say: Coding for Life!");
+  // to move
   if (key == "w") {
     connection.write("Move: up");
   }

@@ -12,19 +12,25 @@ const setupInput = function (conn) {
 
 const handleUserInput = function (key) {
   // To say message
-  connection.write("Say: Coding for Life!");
   // to move
   if (key == "w") {
+    connection.write("Say: I am going up");
     connection.write("Move: up");
   }
   if (key == "a") {
+    connection.write("Say: On your left,Captain!");
     connection.write("Move: left");
   }
   if (key == "s") {
+    connection.write("Say: down,down,down !");
     connection.write("Move: down");
   }
   if (key == "d") {
+    connection.write("Say: Always Right!");
     connection.write("Move: right");
+  }
+  if (key == "o") {
+    connection.write("Say: On your mark!");
   }
   if (key == "\u0003") {
     process.exit();
